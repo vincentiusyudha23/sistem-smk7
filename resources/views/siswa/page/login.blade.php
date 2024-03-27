@@ -1,7 +1,7 @@
 @extends('frontendmaster')
 
 @section('title')
-    <title>Register Admin</title>
+    <title>Login Mapel</title>
 @endsection
 
 @section('content')
@@ -12,24 +12,21 @@
         <div class="w-[50%] h-full flex justify-center items-center">
             <div class="flex flex-col w-[40%]">
                 <div class="flex justify-center items-center mb-5">
-                    <h1 class="text-blue-600 font-bold text-2xl text-center">Register Admin</h1>
+                    <h1 class="text-blue-600 font-bold text-2xl text-center">Login Siswa</h1>
                 </div>
                 <form class="w-full">
                     <input required type="text" placeholder="Username" class="input input-bordered input-primary w-full max-w-md mb-5 bg-blue-500/10" />
-                    <input required type="email" placeholder="Email" class="input input-bordered input-primary w-full max-w-md mb-5 bg-blue-500/10" />
-                    <label class="input input-bordered input-primary bg-blue-500/10 flex items-center gap-2 mb-5">
-                        <input required type="password" class="grow pw-admin" placeholder="Password" />
-                    </label>
-                    <label class="input input-bordered input-primary bg-blue-500/10 flex items-center gap-2 mb-5">
-                        <input required type="password" class="grow pw-admin" placeholder="Confirm Password" />
-                    </label>
+                    <input required type="password" placeholder="Password" class="pw-admin input input-bordered input-primary w-full max-w-md bg-blue-500/10" />
                     <div class="form-control mb-3">
-                        <label class="label cursor-pointer chx-pw">
-                            <input type="checkbox" class="checkbox checkbox-primary" />
-                            <span class="label-text">Show Password</span> 
-                        </label>
+                       <label class="label cursor-pointer chx-pw">
+                           <input type="checkbox" class="checkbox checkbox-primary" />
+                           <span class="label-text">Show Password</span> 
+                       </label>
                     </div>
-                    <button class="btn btn-primary mb-3 text-white text-lg w-full">Sign Up</button>
+                    <div class="w-full text-center my-5 text-blue-600">
+                        <a>Lupa Password?</a>
+                    </div>
+                    <button class="btn btn-primary mb-3 text-white text-lg w-full">Sign In</button>
                 </form>
             </div>
         </div>
