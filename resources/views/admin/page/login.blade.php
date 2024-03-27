@@ -26,7 +26,10 @@
                     <div class="w-full text-center my-5 text-blue-600">
                         <a>Lupa Password?</a>
                     </div>
-                    <button class="btn btn-primary mb-3 text-white text-lg w-full">Sign In</button>
+                        <a href="{{ route('admin.dashboard') }}" class="btn btn-primary mb-3 text-white text-lg w-full">Sign In</a>
+                    <div class="w-full text-center my-5 text-blue-600">
+                        <a href="{{ route('admin.register') }}">Belum Memiliki Akun?</a>
+                    </div>
                 </form>
             </div>
         </div>
