@@ -32,7 +32,9 @@
 
 @section('content')
     <div class="flex flex-row">
-        @include('admin.sidebar.sidebar')
+        <div class="w-[20%]">
+            @include('admin.sidebar.sidebar')
+        </div>
         <div class="w-[80%]">
             <div class="w-full h-14 bg-purple-200 flex items-center px-14 text-lg font-semibold">
                 <h1>Selamat Siang, Vincentius Yudha</h1>
@@ -79,8 +81,10 @@
                 </div>
             </div>
             <div class="w-full px-10">
-                <canvas id="myChart"  height="100"></canvas>
+                <h1 class="text-2xl font-bold">Grafik Presensi Siswa</h1>
+                <canvas id="myChart"  height="75"></canvas>
             </div>
+            @include('admin.page.dashboard.partial.table_presensi')
         </div>
     </div>
 @endsection
