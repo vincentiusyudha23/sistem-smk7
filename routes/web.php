@@ -17,6 +17,10 @@ Route::prefix('admin')->as('admin.')->group(function(){
     
 Route::prefix('mapel')->as('mapel.')->group(function(){
     Route::view('/','mapel.page.login')->name('login');
+    Route::view('/dashboard','mapel.page.dashboard.dashboard')->name('dashboard');
+    Route::view('/sesiujian','mapel.page.sesiUjian.sesi-ujian')->name('sesi-ujian');
+    Route::view('/soal-ujian','mapel.page.soalUjian.soal-ujian')->name('soal-ujian');
+    Route::view('/hasil-ujian','mapel.page.hasilUjian.hasil-ujian')->name('hasil-ujian');
 });
 
 Route::prefix('siswa')->as('siswa.')->group(function(){

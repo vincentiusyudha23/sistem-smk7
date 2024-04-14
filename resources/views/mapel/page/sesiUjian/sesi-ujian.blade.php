@@ -2,23 +2,20 @@
 
 @section('title')
     <title>
-        Kelola Akun Siswa
+        Kelola Sesi Ujian
     </title>
-@endsection
-
-@section('style')
 @endsection
 
 @section('content')
     <div class="flex flex-row">
         <div class="w-[20%]">
-            @include('admin.sidebar.sidebar')
+            @include('mapel.sidebar.sidebar')
         </div>
         <div class="w-[80%] p-10">
-            <h1 class="text-2xl font-bold my-2">Buat Akun Siswa</h1>
-            @include('admin.page.siswa.partial.form_akun')
-            <h1 class="text-2xl font-bold mt-10">List Akun Siswa</h1>
-            @include('admin.page.siswa.partial.tabel_siswa')
+            <h1 class="text-2xl font-bold my-2">Buat Sesi Ujian</h1>
+            @include('mapel.page.sesiUjian.partial.form_sesi_ujian')
+            <h1 class="text-2xl font-bold mt-10">List Sesi Ujian</h1>
+            @include('mapel.page.sesiUjian.partial.tabel_sesi_ujian')
         </div>
     </div>
 @endsection
@@ -26,9 +23,9 @@
 @push('script')
     <script>
         $(document).ready(function(){
-            $('.btn-delete-siswa').on('click', function(){
+            $('.btn-delete-sesi').on('click', function(){
                 Swal.fire({
-                    title: "Hapus Akun Siswa?",
+                    title: "Hapus Sesi Ujian?",
                     icon: "warning",
                     showCancelButton: true,
                     confirmButtonColor: "#dc3545",
