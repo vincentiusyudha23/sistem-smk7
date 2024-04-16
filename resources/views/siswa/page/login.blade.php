@@ -26,7 +26,8 @@
                     <div class="w-full text-center my-5 text-blue-600">
                         <a>Lupa Password?</a>
                     </div>
-                    <button class="btn btn-primary mb-3 text-white text-lg w-full">Sign In</button>
+                    {{-- <button class="btn btn-primary mb-3 text-white text-lg w-full">Sign In</button> --}}
+                    <a href="{{ route('siswa.dashboard') }}" class="btn btn-primary mb-3 text-white text-lg w-full">Sign In</a>
                 </form>
             </div>
         </div>
